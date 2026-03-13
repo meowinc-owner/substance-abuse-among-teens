@@ -438,13 +438,20 @@
 </section>
 
 <!-- ══════════════════ STATS ══════════════════ -->
-<section id="stats" class="bg-white py-24 px-6 border-t-2 border-black" style="font-family:'Courier New',Courier,monospace;">
-  <div class="max-w-5xl mx-auto">
+<section id="stats" class="relative bg-white py-24 px-6 border-t-2 border-black overflow-hidden" style="font-family:'Courier New',Courier,monospace;">
+  <div class="absolute inset-0 gridbg opacity-[0.04] pointer-events-none"></div>
+  <!-- Giant watermark number -->
+  <div class="absolute -right-6 top-4 text-[180px] font-black text-black/[0.04] leading-none pointer-events-none select-none" aria-hidden="true">01</div>
+  <div class="max-w-5xl mx-auto relative z-10">
 
     <div class="mb-14 reveal">
-      <span class="text-xs font-black uppercase tracking-widest border-b-2 border-black pb-0.5">Section 01</span>
-      <h2 class="text-3xl sm:text-5xl font-black text-black tracking-tight mt-3 mb-4 leading-tight">The Stats 📊</h2>
-      <p class="text-black/60 text-base max-w-xl leading-relaxed">Here's what Health Canada found when they surveyed Canadian students in 2026.</p>
+      <div class="flex items-center gap-4 mb-5">
+        <div class="h-px flex-1 bg-black"></div>
+        <span class="text-xs font-black uppercase tracking-[0.3em] text-black/40">Health Canada · 2026</span>
+        <div class="h-px flex-1 bg-black"></div>
+      </div>
+      <h2 class="text-5xl sm:text-7xl font-black text-black tracking-tight mb-4 leading-[0.95]">The<br>Stats</h2>
+      <p class="text-black/50 text-sm max-w-sm leading-relaxed mt-4 border-l-4 border-black pl-4">Here's what Health Canada found when they surveyed Canadian students in 2026.</p>
     </div>
 
     <!-- Animated Bar Chart -->
@@ -565,12 +572,21 @@
 </section>
 
 <!-- ══════════════════ RISKS ══════════════════ -->
-<section id="risks" class="bg-black text-white py-24 px-6 border-t-2 border-black" style="font-family:'Courier New',Courier,monospace;">
-  <div class="max-w-5xl mx-auto">
+<section id="risks" class="relative bg-black text-white py-24 px-6 border-t-2 border-black overflow-hidden" style="font-family:'Courier New',Courier,monospace;">
+  <div class="absolute inset-0 pointer-events-none" style="background-image:linear-gradient(rgba(255,255,255,0.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.07) 1px,transparent 1px);background-size:40px 40px;"></div>
+  <div class="absolute -left-4 top-0 bottom-0 w-2 bg-white/10 pointer-events-none"></div>
+  <div class="absolute -right-6 bottom-4 text-[180px] font-black text-white/[0.04] leading-none pointer-events-none select-none" aria-hidden="true">02</div>
+  <div class="max-w-5xl mx-auto relative z-10">
     <div class="mb-14 reveal">
-      <span class="text-xs font-black uppercase tracking-widest border-b-2 border-white/40 pb-0.5 text-white/70">Section 02</span>
-      <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight mt-3 mb-4 leading-tight">Signs &amp; Risks 🧠</h2>
-      <p class="text-white/50 text-base max-w-xl leading-relaxed">Your body and brain are still growing. That makes substances way more dangerous for you than for adults.</p>
+      <span class="inline-block text-[10px] font-black uppercase tracking-[0.4em] text-white/30 mb-4">Brain &amp; Body</span>
+      <div class="flex items-end gap-6">
+        <h2 class="text-5xl sm:text-7xl font-black text-white tracking-tight leading-[0.95]">Signs<br>&amp; Risks</h2>
+        <div class="pb-2 hidden sm:block">
+          <div class="w-16 h-0.5 bg-white/30 mb-2"></div>
+          <p class="text-white/40 text-xs leading-relaxed max-w-[160px]">Your brain develops until 25. Every hit matters.</p>
+        </div>
+      </div>
+      <div class="mt-6 h-px bg-white/15 w-full"></div>
     </div>
     <div class="grid sm:grid-cols-2 gap-6 mb-12 stagger">
       <div class="border-2 border-white/30 rounded p-8 card-lift" style="box-shadow:4px 4px 0 rgba(255,255,255,.15);">
@@ -613,12 +629,18 @@
 </section>
 
 <!-- ══════════════════ WARNINGS ══════════════════ -->
-<section id="warnings" class="bg-white py-24 px-6 border-t-2 border-black" style="font-family:'Courier New',Courier,monospace;">
-  <div class="max-w-5xl mx-auto">
+<section id="warnings" class="relative bg-white py-24 px-6 border-t-2 border-black overflow-hidden" style="font-family:'Courier New',Courier,monospace;">
+  <div class="absolute inset-0 gridbg opacity-[0.04] pointer-events-none"></div>
+  <div class="max-w-5xl mx-auto relative z-10">
     <div class="mb-14 reveal">
-      <span class="text-xs font-black uppercase tracking-widest border-b-2 border-black pb-0.5">Section 02 cont.</span>
-      <h2 class="text-3xl sm:text-5xl font-black text-black tracking-tight mt-3 mb-4 leading-tight">Warning Signs</h2>
-      <p class="text-black/60 text-base max-w-xl leading-relaxed">If you notice these in yourself or a friend, it might be time to talk to someone you trust.</p>
+      <!-- Ticker-tape overline -->
+      <div class="flex items-center overflow-hidden mb-6 -mx-6 px-6 border-y border-black/10 py-2 bg-black/[0.02]">
+        <span class="text-[10px] font-black uppercase tracking-[0.35em] text-black/30 whitespace-nowrap">Know the signs &nbsp;·&nbsp; Know the signs &nbsp;·&nbsp; Know the signs &nbsp;·&nbsp; Know the signs &nbsp;·&nbsp; Know the signs &nbsp;·&nbsp; Know the signs</span>
+      </div>
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+        <h2 class="text-5xl sm:text-7xl font-black text-black tracking-tight leading-[0.95]">Warning<br>Signs</h2>
+        <p class="text-black/50 text-sm leading-relaxed max-w-xs pb-1">If you notice these in yourself or a friend, it might be time to talk to someone you trust.</p>
+      </div>
     </div>
     <div class="grid sm:grid-cols-3 gap-6 stagger">
       <div class="border-2 border-black rounded p-6 card-lift" style="box-shadow:4px 4px 0 #000;">
@@ -654,12 +676,21 @@
 </section>
 
 <!-- ══════════════════ MYTHS ══════════════════ -->
-<section id="myths" class="bg-white py-24 px-6 border-t-2 border-black" style="font-family:'Courier New',Courier,monospace;">
-  <div class="max-w-4xl mx-auto">
+<section id="myths" class="relative bg-white py-24 px-6 border-t-2 border-black overflow-hidden" style="font-family:'Courier New',Courier,monospace;">
+  <div class="absolute inset-0 gridbg opacity-[0.04] pointer-events-none"></div>
+  <div class="max-w-4xl mx-auto relative z-10">
     <div class="mb-14 reveal">
-      <span class="text-xs font-black uppercase tracking-widest border-b-2 border-black pb-0.5">Bonus</span>
-      <h2 class="text-3xl sm:text-5xl font-black text-black tracking-tight mt-3 mb-4 leading-tight">Myth vs. Reality</h2>
-      <p class="text-black/60 text-base max-w-xl leading-relaxed">Tap each myth to reveal the truth. These are the most common excuses people use.</p>
+      <div class="flex items-start gap-6">
+        <!-- Inverted number block -->
+        <div class="flex-shrink-0 bg-black text-white px-4 py-3 mt-1">
+          <span class="text-xs font-black uppercase tracking-widest block text-white/50">Bonus</span>
+          <span class="text-3xl font-black leading-none">✕</span>
+        </div>
+        <div>
+          <h2 class="text-5xl sm:text-7xl font-black text-black tracking-tight leading-[0.95] mb-3">Myth vs.<br>Reality</h2>
+          <p class="text-black/50 text-sm leading-relaxed max-w-sm">Tap each myth to reveal the truth. These are the most common excuses people use.</p>
+        </div>
+      </div>
     </div>
     <div class="space-y-4 stagger">
 
@@ -748,12 +779,16 @@
 </section>
 
 <!-- ══════════════════ SAY NO ══════════════════ -->
-<section id="sayno" class="bg-white py-24 px-6 border-t-2 border-black" style="font-family:'Courier New',Courier,monospace;">
-  <div class="max-w-5xl mx-auto">
+<section id="sayno" class="relative bg-white py-24 px-6 border-t-2 border-black overflow-hidden" style="font-family:'Courier New',Courier,monospace;">
+  <div class="absolute inset-0 gridbg opacity-[0.04] pointer-events-none"></div>
+  <div class="absolute -left-2 top-0 bottom-0 w-1 bg-black pointer-events-none"></div>
+  <div class="max-w-5xl mx-auto relative z-10">
     <div class="mb-14 reveal">
-      <span class="text-xs font-black uppercase tracking-widest border-b-2 border-black pb-0.5">Section 03</span>
-      <h2 class="text-3xl sm:text-5xl font-black text-black tracking-tight mt-3 mb-4 leading-tight">Your Strategy for Success</h2>
-      <p class="text-black/60 text-base max-w-xl leading-relaxed">Making healthy choices today protects your brain's development and keeps your future goals on track.</p>
+      <div class="border-b-4 border-black pb-6 mb-0">
+        <p class="text-[10px] font-black uppercase tracking-[0.4em] text-black/30 mb-3">Section 03 — How to say no</p>
+        <h2 class="text-5xl sm:text-7xl font-black text-black tracking-tight leading-[0.95]">Your<br>Strategy<br>for Success</h2>
+        <p class="text-black/50 text-sm leading-relaxed max-w-xs mt-5">Making healthy choices today protects your brain and keeps your future goals on track.</p>
+      </div>
     </div>
     <div class="grid sm:grid-cols-3 gap-6 mb-14 stagger">
       <div class="border-2 border-black rounded p-6 card-lift" style="box-shadow:4px 4px 0 #000;"><div class="w-11 h-11 border-2 border-black rounded flex items-center justify-center mb-4"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div><h3 class="font-black text-sm uppercase tracking-wide mb-2">Set SMART Goals</h3><p class="text-black/60 text-sm leading-relaxed">Focus on your future — sports, grades, or personal projects keep you motivated and give you something to protect.</p></div>
@@ -776,12 +811,18 @@
 </section>
 
 <!-- ══════════════════ HELP ══════════════════ -->
-<section id="help" class="bg-black text-white py-24 px-6 border-t-2 border-black" style="font-family:'Courier New',Courier,monospace;">
-  <div class="max-w-4xl mx-auto">
+<section id="help" class="relative bg-black text-white py-24 px-6 border-t-2 border-black overflow-hidden" style="font-family:'Courier New',Courier,monospace;">
+  <div class="absolute inset-0 pointer-events-none" style="background-image:linear-gradient(rgba(255,255,255,0.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.07) 1px,transparent 1px);background-size:40px 40px;"></div>
+  <!-- Corner bracket decoration -->
+  <div class="absolute top-6 left-6 w-10 h-10 border-l-2 border-t-2 border-white/20 pointer-events-none"></div>
+  <div class="absolute top-6 right-6 w-10 h-10 border-r-2 border-t-2 border-white/20 pointer-events-none"></div>
+  <div class="absolute bottom-6 left-6 w-10 h-10 border-l-2 border-b-2 border-white/20 pointer-events-none"></div>
+  <div class="absolute bottom-6 right-6 w-10 h-10 border-r-2 border-b-2 border-white/20 pointer-events-none"></div>
+  <div class="max-w-4xl mx-auto relative z-10">
     <div class="mb-14 reveal">
-      <span class="text-xs font-black uppercase tracking-widest border-b-2 border-white/40 pb-0.5 text-white/50">Section 03 cont.</span>
-      <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight mt-3 mb-4 leading-tight">Need Help? You're Not Alone 🤝</h2>
-      <p class="text-white/50 text-base max-w-xl leading-relaxed">Asking for help is one of the bravest things you can do. These Canadian resources are free, confidential, and judgment-free.</p>
+      <p class="text-[10px] font-black uppercase tracking-[0.4em] text-white/30 mb-4">Section 03 cont. — Resources</p>
+      <h2 class="text-5xl sm:text-7xl font-black text-white tracking-tight leading-[0.95] mb-4">Need Help?<br><span style="text-decoration-line:underline;text-decoration-style:solid;text-decoration-color:white;text-underline-offset:6px;">You're Not<br>Alone.</span></h2>
+      <p class="text-white/40 text-sm leading-relaxed max-w-xs mt-6">Free, confidential, and judgment-free. Asking for help is one of the bravest things you can do.</p>
     </div>
     <div class="grid sm:grid-cols-2 gap-6 mb-12 stagger">
       <div class="border-2 border-white/30 rounded p-8 flex flex-col gap-4 hover:border-white card-lift" style="box-shadow:4px 4px 0 rgba(255,255,255,.15); transition: border-color 0.4s cubic-bezier(0.16,1,0.3,1), transform 0.5s cubic-bezier(0.16,1,0.3,1), box-shadow 0.4s cubic-bezier(0.16,1,0.3,1);">
@@ -814,8 +855,9 @@
 </section>
 
 <!-- ══════════════════ FOOTER ══════════════════ -->
-<footer class="bg-white border-t-2 border-black py-12 px-6 text-center" style="font-family:'Courier New',Courier,monospace;">
-  <div class="max-w-2xl mx-auto">
+<footer class="relative bg-white border-t-4 border-black py-12 px-6 text-center overflow-hidden" style="font-family:'Courier New',Courier,monospace;">
+  <div class="absolute inset-0 gridbg opacity-[0.04] pointer-events-none"></div>
+  <div class="max-w-2xl mx-auto relative z-10">
     <div class="flex items-center justify-center gap-2 mb-4 text-black/40">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z"/><path d="m15 5 3 3"/></svg>
       <span class="text-xs font-black uppercase tracking-widest">Teen Drug Facts</span>
